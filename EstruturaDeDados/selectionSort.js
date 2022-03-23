@@ -13,3 +13,23 @@ function selectionSort(vetor){
     return vetor;
 }
 console.log(selectionSort(num))
+
+/* Teacher's mode resolution
+    let nums = [77,44,22,33,99,55,88,0,66,11]
+
+function selectionSort(vetor){
+    for(let posSelect=0; posSelect<vetor.length -1;posSelect++){
+        let posMenor = posSelect + 1
+        for(let i = posMenor+1; i<vetor.length; i++){
+            if(vetor[posMenor] > vetor[i]){
+                posMenor = i
+            }
+        }
+        if(vetor[posSel] > vetor[posMenor]){
+            [vetor[posSel], vetor[posMenor]] = [vetor[posMenor] = vetor[posSel]
+        }
+    }
+}
+selectionSort(nums)
+console.log(nums)
+*/
